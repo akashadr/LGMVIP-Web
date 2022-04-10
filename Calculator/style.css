@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(70deg, #A683E3 50%, #E4E9FD 50%);
+    min-height: 600px;
+    font-family: 'helvetica neue';
+}
+.main {
+    width: 350px;
+    height: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #D1D1D1;
+    padding: 0;
+    box-shadow: 0 5px 50px 0 rgba(0, 0, 0, .5);
+    box-shadow: inset 0 -5px 10px 5px rgba(0, 0, 0, .5);
+    transform: translate(-50%, -50%) scale(1);
+}
+.textview {
+    width: 90%;
+    height: 90px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 24px auto 15px auto;
+    font-size: 50px;
+    text-align: right;
+    font-family: 'Segment7Standard';
+    font-family: 'Rubik', sans-serif;
+    background: #CDDECC;
+    border-radius: 5%;
+    color: #6d756b;
+    border: none;
+    padding: 0 5px 0 0;
+    overflow-x: scroll;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                  inset 5px 5px 12px rgba(0,0,0,.16);
+}
+
+.Exp {
+  font-size: 35px;
+}
+
+.Mod{
+  font-size: 35px;
+}
+table {
+    position: absolute;
+      bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px 23px 23px;
+}
+#clean {
+    background: #ff1900;
+    color: #fff;
+    box-shadow: inset 0 5px 10px 0 #ff1900,
+                inset 0 -5px 10px 3px #2d1f1fba,
+                0 5px 10px 0px #1e211e;
+}
+#clean:active {
+    box-shadow: inset 0 -5px 10px 0 #ff1900,
+                inset 0 5px 10px 3px #2d1f1fba,
+                0 0px 10px 0px #3f423f00;
+}
+
+#clear {
+    background: #FFD124;
+    color: #fff;
+    box-shadow: inset 0 5px 10px 0 #FFD124,
+                inset 0 -5px 10px 3px #2d1f1fba,
+                0 5px 10px 0px #1e211e;
+}
+#clear:active {
+    box-shadow: inset 0 -5px 10px 0 #FFD124,
+                inset 0 5px 10px 3px #2d1f1fba,
+                0 0px 10px 0px #3f423f00;
+}
+
+#img {
+    width: 80%;
+    height: 80%;
+    transform: scale(.9);
+}
+
+#equal,
+#second {
+    width: 144px;
+}
+#second {
+    background: #31e008;
+    color:#fff;
+    box-shadow: inset 0 5px 10px 0 #31e008, inset 0 -5px 10px 3px #2a5a22bf, 0 5px 10px 0px #1e211e;
+}
+#second:active {
+    box-shadow: inset 0 -5px 10px 0 #31e008,
+                inset 0 5px 10px 3px #2a5a22bf,
+                0 0px 10px 0px #3f423f00;
+}
+.button {
+    width: 56px;
+    height: 56px;
+    font-size: 50px;
+    font-weight: 900;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 4px;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 50px;
+    background: #f0eeef;
+    color: #3b3b3c;
+    box-shadow: inset 0 5px 10px 0 #fff,
+                inset 0 -5px 10px 3px #847a7aba,
+                0 5px 10px 0px #1e211e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main table tr td .button:active {
+    box-shadow: inset 0 -5px 10px 0 #fff,
+                inset 0 5px 10px 3px #847a7aba,
+                0 0px 10px 0px #3f423f00;
+}
+.inner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto 0 auto 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-2.5px);
+}
+.main table tr td .button .inner:active {
+    transform: translateY(2.5px) scale(.98);
+}
+::selection {
+    background: transparent;
+    color: auto;
+}
