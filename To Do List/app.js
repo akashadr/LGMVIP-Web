@@ -11,6 +11,12 @@ window.addEventListener('load', () => {
 
 		const task = input.value;
 
+		if (task==="") {
+            alert("Please Enter Valid Task")
+        } 
+		
+		else{ 
+
 		Count = Count +1;
 
 		document.getElementById('T').innerHTML = "Tasks: " + Count;
@@ -67,5 +73,6 @@ window.addEventListener('load', () => {
             Count = Count - 1;
 			document.getElementById('T').innerHTML = "Tasks: " + Count;
 		});
+	}
 	});
 });
